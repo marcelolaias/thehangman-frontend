@@ -41,4 +41,3 @@ A implementação das regras estão no projeto backend.
 - O jogo continua até que a palavra é adivinhada e todas as letras são reveladas e exibida a mensagem 'WINNER' ou todas as partes do carrasco são exibidas 'LOSER'.
 - O usuário tem 100 segundos para escolher uma letra e o cronômetro é reiniciado a cada escolha. Caso esgote o tempo o jogo termina.
 - Após 6 tentativas inválidas o jogo termina.
-
