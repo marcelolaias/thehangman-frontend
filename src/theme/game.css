@@ -1,0 +1,154 @@
+#debug {
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --color-background:hsl(212, 18%, 21%);  
+    --color-background-header:hsl(212, 8%, 10%);  
+    --color-background-button:#2980b9;
+    --color-background-button2:#5080b9;
+    --color-text-dark:#2c3e50;
+    --color-text-light:#ecf0f1;
+    --color-text-title:#1abc9c;
+    --color-text-success:#2ecc71;
+    --color-text-error:#c0392b;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--color-text-light)
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background);
+}
+
+h1 {
+    color: var(--color-text-title);
+    font-size: 35pt;
+}
+
+input[type=text] {
+    color: var(--color-text-dark);
+    background-color: var(--color-text-light);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 5px;    
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 10px;    
+    background-color: var(--color-background-button) !important;
+    cursor: pointer;
+    transition: 0.2s opacity !important;
+}
+
+.button-save {
+    margin-top: 15px;
+    background-color: var(--color-text-title) !important;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button[disable] {
+    opacity: 0.2;
+}
+
+  #gameBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      border: 1px solid var(--color-text-light);
+    }
+    
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-text-light);
+    }
+
+    th {
+        background-color: var(--color-background-header);
+    }
+    
+    td {
+      text-align: center;
+    }
+
+    tr:hover {
+        background-color: var(--color-text-dark);
+    }
+
+.gallows-img {
+    height: 250px;
+}
+.clock-img {
+    height: 80px;
+    margin-bottom: 14px;
+}
+.new-word-img {
+    height: 90px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.back-img {
+    float: right;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-img img {
+    height: 90px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+    .game-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .keyboard {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 25% auto 25%;
+        padding: 0;
+      }
+      .grid-item {
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }    
